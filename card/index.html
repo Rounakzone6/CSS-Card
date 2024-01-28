@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .container{
+            width: 280px;
+            border: 1px solid #8d8d8d;
+            border-radius: 12px;
+            padding: 10px;
+            transition: all .3s ease-in-out;
+            margin: 60px;
+            font-family: 'Poppins',sans-serif;
+        }
+        .container:hover{
+            border: none;
+            box-shadow: 0px 0px 13px #7f8184;
+        }
+        .name{
+            display: flex;
+            font-family: 'Bebas Neue',sans-serif;
+            gap: 10px;
+        }
+        .name p:nth-child(1){
+            font-size: 80px;
+            margin: 0px;
+            text-shadow: 4px -3px #8d8d8d;
+        }
+        .name p:nth-child(2){
+            font-size: 25px;
+            font-weight: 500;
+            margin-top: 15px;
+        }
+        .logo{
+            margin-left: 10px;
+            display: flex;
+        }
+        .q{
+            width: 25px;
+            height: 25px;
+            border: 3px solid #5daf75;
+            background-color: #c9ecd5;
+            color: #5daf75;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 0px 8px #5daf75;
+            font-weight: bold;
+        }
+        .logo img{
+            height: 134px;
+            margin-left: 32px;
+        }
+        .green{
+            color: #5daf75;
+        }
+        .score ul{
+            display: flex;
+            padding-left: 10px;
+            gap: 15px;
+            border-top: 1px solid #8d8d8d;
+            list-style-type: none;
+        }
+        .score ul li{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .score ul li p:nth-child(1){
+            font-family: 'Bebas Neue',sans-serif;
+            font-size: 29px;
+            margin: 6px 0px 0px 0px;
+        }
+        .score ul li p:nth-child(2){
+            font-size: 18px;
+            font-weight: 600;
+            color: #7f8184;
+            margin: 0px;
+        }
+        .recent{
+            margin: 20px 10px 20px 10px;
+        }
+        .recent p{
+            font-size: 20px;
+            margin: 10px 0;
+            font-weight: 500;
+        }
+        .recent .list{
+            display: flex;
+            gap: 10px;
+        }
+        .circle{
+            height: 35px;
+            width: 35px;
+            border: 1px solid #5daf75;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-size: 20px;
+        }
+        .red{
+            border-color: red;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="name">
+            <p>1</p>
+            <p>Chennai Super Kings</p>
+        </div>
+        <div class="logo">
+            <div class="q">Q</div>
+            <img src="./CSK.png" alt="">
+        </div>
+        <div class="score">
+            <ul>
+                <li>
+                    <p>20</p>
+                    <p>Points</p>
+                </li>
+                <li>
+                    <p>14</p>
+                    <p>Played</p>
+                </li>
+                <li>
+                    <p>10</p>
+                    <p>Won</p>
+                </li>
+                <li>
+                    <p class="green">0.809</p>
+                    <p>NRR</p>
+                </li>
+            </ul>
+        </div>
+        <div class="recent">
+            <p>Recent form</p>
+            <div class="list">
+                <div class="circle green">W</div>
+                <div class="circle green">W</div>
+                <div class="circle red">R</div>
+                <div class="circle red">R</div>
+                <div class="circle green">W</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
